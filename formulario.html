@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body class="body">
+    <main>
+        <button class="theme-btn" style="color: white;">Theme <i class="fa-solid fa-moon"></i></button>
+    <form>
+        <h2 style="text-align: center; width: 100%; box-shadow: 0px 10px 10px rgba(0,0,0,0.1); border-radius: 10px; background-color: rgba(255,255,255,0.1);">Dados de Usuário</h2>
+
+        <div class="name-label-div">
+            <label for="name"> 
+                <i class="fa-solid fa-signature"></i>
+                Nome
+            </label>
+            
+            <label for="sobrenome"> 
+                <i class="fa-solid fa-signature"></i>
+                Sobrenome
+            </label>
+        </div>
+        <div class="nome-field-div">
+        
+            <input id="name" placeholder="Digite seu nome..." type="text" required>
+
+            <input id="sobrenome" placeholder="Digite seu sobrenome..." type="text" required>
+        </div>
+    
+       
+        
+        <label for="email">
+            <i class="fa-solid fa-envelope"></i>
+            Email
+        </label> 
+        <input id="email" placeholder="Digite seu melhor email..." type="email" required>
+        <label for="idade">
+            <i class="fa-solid fa-clock"></i>
+            Idade
+        </label>
+        <input id="idade" placeholder="Digite sua idade..." type="number" required>
+        <label for="nascimento">
+            <i class="fa-solid fa-calendar"></i>
+            Data de Nascimento
+        </label>
+        <input id="nascimento" type="date" required> 
+        <label for="telefone">
+            <i class="fa-solid fa-phone"></i>
+            Telefone
+        </label>
+        <input id="telefone" type="tel" pattern="[0-9]{4,5}-[0-9]{4}" placeholder="xxxxx-xxxx" required>
+
+        <button class="submit-btn" type="submit">Enviar</button>
+    </form>
+        <div class="results">
+            
+        </div>
+    </main>
+    <div class="overlay disable">
+   
+    </div>
+
+    
+</body>
+</html>
